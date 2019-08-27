@@ -1,5 +1,5 @@
 {
-  "name": "ionic-mqtt",
+  "name": "ionic-csv",
   "integrations": {
     "cordova": {}
   },

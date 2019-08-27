@@ -1,7 +1,7 @@
 {
-  "name": "ionic-mqtt",
+  "name": "ionic-csv",
   "version": "1.1.1",
-  "description": "A Simple Ionic Mqtt Service Package",
+  "description": "A Simple Ionic CSV Convertor Service Package",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
@@ -12,19 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walterchau/ionic-mqtt.git"
+    "url": "git+https://github.com/walterchau/ionic-csv.git"
   },
   "keywords": [
-    "mqtt",
+    "csv",
     "ionic",
-    "paho-mqtt"
   ],
   "author": "Walter Chau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/walterchau/ionic-mqtt/issues"
+    "url": "https://github.com/walterchau/ionic-csv/issues"
   },
-  "homepage": "https://github.com/walterchau/ionic-mqtt#readme",
+  "homepage": "https://github.com/walterchau/ionic-csv#readme",
   "devDependencies": {
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
