@@ -16,7 +16,7 @@
   },
   "keywords": [
     "csv",
-    "ionic",
+    "ionic"
   ],
   "author": "Walter Chau",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
-    "@angular/compiler-cli": "5.0.3",
+    "@angular/compiler-cli": "^8.2.3",
     "@angular/core": "5.0.3",
     "@angular/forms": "^5.2.7",
     "@angular/platform-browser": "5.0.3",

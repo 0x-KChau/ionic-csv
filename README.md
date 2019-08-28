@@ -1,7 +1,7 @@
 # ionic-csv
 
 ## Introduction
-This is a simple csv convertor for Ionic.
+This is a simple json to csv convertor for Ionic.
 
 ## Get Started
 
@@ -17,13 +17,13 @@ npm install ionic-csv --save
 // inside your app.module.ts
 
 ...
-import { IonicCsvModule, CSVService } from 'ionic-csv';
+import { JsonToCSVModule, CSVService } from 'ionic-csv';
 
 @NgModule({
   ...,
   imports: [
     ...,
-    IonicCsvModule
+    JsonToCSVModule
   ],
   providers: [
     ...,
@@ -48,7 +48,22 @@ import { CSVService } from 'ionic-csv';
 
 export class HomePage {
 
+  constructor( private _csvService: CSVService ) { }
 
+  private _csvData: any = null;
+  private _fileName: any = null;
+
+  public jsonToCsv(data: any) {
+    // pass the object array to the function
+    // return an array in csv format
+    this._csvData = this._csvService.jsonToCsv(data);
+  }
+
+  public downloadCsv() {
+    // pass the csv data and file name to the function
+    // csv file will be download simultaneously
+    this._csvService.downloadCsv(this._csvData, this._fileName);
+  }
 
   ...
 
@@ -56,10 +71,23 @@ export class HomePage {
 
 ```
 
-The above example uses the [Mosquitto broder/server](https://test.mosquitto.org/), if you want to run your own localhost CSV broker, you can use [Mosquitto](https://mosquitto.org/) or [Mosca](http://www.mosca.io/), to launch your own broker. Remember to change the host, port and clientId to your localhost server respectively.
-
 
 ## API
+
+### CSVService.jsonToCsv(data)
+
+#### Property
+
+* `data`: object array
+
+
+### CSVService.downloadCsv(csvData, fileName)
+
+#### Property
+
+* `csvData`: csv array
+
+* `fileName`: string
 
 
 

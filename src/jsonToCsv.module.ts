@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 // import { MqttComponent } from './components/mqtt-component';
-import { MQTTService } from './providers/mqtt-provider';
+import { CSVService } from './providers/jsonToCsv-provider';
 import { IonicModule } from 'ionic-angular';
 
 @NgModule({
@@ -18,11 +18,11 @@ import { IonicModule } from 'ionic-angular';
     ]
 })
 
-export class IonicMqttModule {
+export class JsonToCSVModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: IonicMqttModule,
-            providers: [MQTTService]
+            ngModule: JsonToCSVModule,
+            providers: [CSVService]
         };
     }
 }
